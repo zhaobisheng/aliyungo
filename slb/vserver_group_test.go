@@ -6,7 +6,7 @@ import (
 
 	"fmt"
 
-	"github.com/denverdino/aliyungo/common"
+	"github.com/zhaobisheng/aliyungo/common"
 )
 
 var client = NewClient("your accessId", "your accessId secret")

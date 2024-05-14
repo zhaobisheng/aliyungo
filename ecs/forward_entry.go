@@ -1,6 +1,6 @@
 package ecs
 
-import "github.com/denverdino/aliyungo/common"
+import "github.com/zhaobisheng/aliyungo/common"
 
 type CreateForwardEntryArgs struct {
 	RegionId       common.Region

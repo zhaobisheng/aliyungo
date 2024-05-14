@@ -7,7 +7,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/denverdino/aliyungo/util"
+	"github.com/zhaobisheng/aliyungo/util"
 )
 
 const HeaderSLSPrefix1 = "x-log-"

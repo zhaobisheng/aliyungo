@@ -3,7 +3,7 @@ package location
 import (
 	"testing"
 
-	"github.com/denverdino/aliyungo/common"
+	"github.com/zhaobisheng/aliyungo/common"
 )
 
 func TestDescribeServices(t *testing.T) {

@@ -1,7 +1,7 @@
 package rds
 
 import (
-	"github.com/denverdino/aliyungo/common"
+	"github.com/zhaobisheng/aliyungo/common"
 
 	"os"
 )

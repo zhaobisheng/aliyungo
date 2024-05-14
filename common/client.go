@@ -16,7 +16,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/denverdino/aliyungo/util"
+	"github.com/zhaobisheng/aliyungo/util"
 	"github.com/opentracing/opentracing-go"
 )
 

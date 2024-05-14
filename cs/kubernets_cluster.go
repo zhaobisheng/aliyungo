@@ -6,9 +6,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/denverdino/aliyungo/ecs"
+	"github.com/zhaobisheng/aliyungo/ecs"
 
-	"github.com/denverdino/aliyungo/common"
+	"github.com/zhaobisheng/aliyungo/common"
 )
 
 type TaskState string

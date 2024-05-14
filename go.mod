@@ -1,4 +1,4 @@
-module github.com/denverdino/aliyungo
+module github.com/zhaobisheng/aliyungo
 
 go 1.15
 

@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/denverdino/aliyungo/common"
+	"github.com/zhaobisheng/aliyungo/common"
 )
 
 var (

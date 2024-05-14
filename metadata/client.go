@@ -16,7 +16,7 @@ import (
 
 	"os"
 
-	"github.com/denverdino/aliyungo/util"
+	"github.com/zhaobisheng/aliyungo/util"
 )
 
 const (

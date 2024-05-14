@@ -1,8 +1,8 @@
 package rds
 
 import (
-	"github.com/denverdino/aliyungo/common"
-	"github.com/denverdino/aliyungo/util"
+	"github.com/zhaobisheng/aliyungo/common"
+	"github.com/zhaobisheng/aliyungo/util"
 )
 
 type DescribeDBInstancePerformanceArgs struct {

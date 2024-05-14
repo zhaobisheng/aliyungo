@@ -3,7 +3,7 @@ package dm
 import (
 	"net/http"
 
-	"github.com/denverdino/aliyungo/common"
+	"github.com/zhaobisheng/aliyungo/common"
 )
 
 type SendEmailArgs struct {

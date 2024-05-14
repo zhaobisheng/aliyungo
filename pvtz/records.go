@@ -3,7 +3,7 @@ package pvtz
 import (
 	"log"
 
-	"github.com/denverdino/aliyungo/common"
+	"github.com/zhaobisheng/aliyungo/common"
 )
 
 type RecordStatus string

@@ -1,6 +1,6 @@
 package kms
 
-import "github.com/denverdino/aliyungo/common"
+import "github.com/zhaobisheng/aliyungo/common"
 
 //https://help.aliyun.com/document_detail/28950.html?spm=5176.doc28947.6.564.JrFZRr
 type DecryptArgs struct {

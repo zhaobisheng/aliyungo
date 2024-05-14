@@ -6,8 +6,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/denverdino/aliyungo/common"
-	"github.com/denverdino/aliyungo/util"
+	"github.com/zhaobisheng/aliyungo/common"
+	"github.com/zhaobisheng/aliyungo/util"
 )
 
 // InstanceStatus represents instance status
@@ -480,6 +480,8 @@ func (client *Client) DescribeInstanceVncUrl(args *DescribeInstanceVncUrlArgs) (
 }
 
 type DescribeInstancesArgs struct {
+	PageNumber          int
+	PageSize            int
 	RegionId            common.Region
 	VpcId               string
 	VSwitchId           string
@@ -742,8 +744,9 @@ func (client *Client) CreateInstance(args *CreateInstanceArgs) (instanceId strin
 
 type RunInstanceArgs struct {
 	CreateInstanceArgs
-	MinAmount       int
-	MaxAmount       int
+	Amount int
+	// MinAmount       int
+	// MaxAmount       int
 	AutoReleaseTime string
 	NetworkType     string
 	InnerIpAddress  string

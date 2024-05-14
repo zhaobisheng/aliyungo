@@ -5,7 +5,7 @@ import (
 
 	"os"
 
-	"github.com/denverdino/aliyungo/common"
+	"github.com/zhaobisheng/aliyungo/common"
 )
 
 type Client struct {

@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/denverdino/aliyungo/common"
+	"github.com/zhaobisheng/aliyungo/common"
 )
 
 func ExampleClient_DescribeInstanceStatus() {

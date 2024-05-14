@@ -1,6 +1,6 @@
 package kms
 
-import "github.com/denverdino/aliyungo/common"
+import "github.com/zhaobisheng/aliyungo/common"
 
 //https://help.aliyun.com/document_detail/44197.html?spm=5176.doc54560.6.562.p7NkZB
 type CancelKeyDeletionArgs struct {
