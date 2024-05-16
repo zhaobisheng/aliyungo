@@ -574,6 +574,13 @@ func (client *Client) ModifyInstanceAutoReleaseTime(instanceId, time string) err
 
 type DeleteInstanceArgs struct {
 	InstanceId string
+	Force      bool
+}
+
+type DeleteInstancesArgs struct {
+	InstanceId []string
+	Force      bool
+	RegionId   common.Region
 }
 
 type DeleteInstanceResponse struct {
@@ -583,10 +590,17 @@ type DeleteInstanceResponse struct {
 // DeleteInstance deletes instance
 //
 // You can read doc at http://docs.aliyun.com/#/pub/ecs/open-api/instance&deleteinstance
-func (client *Client) DeleteInstance(instanceId string) error {
-	args := DeleteInstanceArgs{InstanceId: instanceId}
+func (client *Client) DeleteInstance(instanceId string, force bool) error {
+	args := DeleteInstanceArgs{InstanceId: instanceId, Force: force}
 	response := DeleteInstanceResponse{}
 	err := client.Invoke("DeleteInstance", &args, &response)
+	return err
+}
+
+func (client *Client) DeleteInstances(instanceId []string, region common.Region, force bool) error {
+	args := DeleteInstancesArgs{InstanceId: instanceId, RegionId: region, Force: force}
+	response := DeleteInstanceResponse{}
+	err := client.Invoke("DeleteInstances", &args, &response)
 	return err
 }
 
@@ -657,6 +671,7 @@ var (
 )
 
 type CreateInstanceArgs struct {
+	AutoReleaseTime             string
 	RegionId                    common.Region
 	ZoneId                      string
 	ImageId                     string
